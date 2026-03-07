@@ -56,7 +56,7 @@ function HomepageHeader() {
             <Link
               className="button button--primary button--lg"
               to="#">
-              Peneliti@APIK-Coming Soon
+              Peneliti@APIK-Segera Hadir
             </Link>
           </div>
         </div>
