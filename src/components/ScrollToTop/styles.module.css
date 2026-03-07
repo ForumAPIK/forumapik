@@ -1,0 +1,89 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.scrollButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  width: 60px;
+  height: 60px;
+  background: var(--ifm-color-primary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(155, 30, 26, 0.3);
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.scrollButton:hover {
+  background: var(--ifm-color-primary-dark);
+  box-shadow: 0 6px 20px rgba(155, 30, 26, 0.4);
+  transform: translateY(-5px);
+}
+
+.scrollButton:active {
+  transform: translateY(-2px);
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Make logo white */
+}
+
+.arrowIcon {
+  color: white;
+  margin-top: -4px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .scrollToTop {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .scrollButton {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrowIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .scrollButton {
+  box-shadow: 0 4px 12px rgba(155, 30, 26, 0.5);
+}
+
+[data-theme='dark'] .scrollButton:hover {
+  box-shadow: 0 6px 20px rgba(155, 30, 26, 0.6);
+}

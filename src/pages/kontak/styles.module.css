@@ -1,0 +1,234 @@
+.kontakPage {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  min-height: calc(100vh - var(--ifm-navbar-height) - var(--ifm-footer-height));
+}
+
+.kontakContent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.kontakContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.intro {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 2.5rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contactCard {
+  padding: 2rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.contactIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--ifm-color-primary-lighter), var(--ifm-color-primary));
+  border-radius: 50%;
+  color: white;
+}
+
+.contactIcon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.contactCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.contactCard p {
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1rem;
+}
+
+.contactLink {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: var(--ifm-color-primary);
+  color: white !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.contactLink:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(155, 30, 26, 0.3);
+}
+
+.contactInfo {
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.7;
+}
+
+.socialSection {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.socialSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.socialSection p {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.socialButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 2rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-emphasis-800);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.socialButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.socialButton:hover {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(155, 30, 26, 0.25);
+}
+
+.formSection {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.formSection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.formSection p {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-600);
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.contactCTA {
+  margin-top: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--ifm-color-primary);
+  color: white !important;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(155, 30, 26, 0.2);
+}
+
+.ctaButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(155, 30, 26, 0.35);
+}
+
+@media (max-width: 768px) {
+  .kontakContent h1 {
+    font-size: 2rem;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .socialLinks {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .socialButton {
+    justify-content: center;
+  }
+
+  .formSection {
+    padding: 2rem 1.5rem;
+  }
+}
+
+[data-theme='dark'] .contactCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .contactCard:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .formSection {
+  background: var(--ifm-color-emphasis-200);
+}

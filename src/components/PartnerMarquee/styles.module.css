@@ -1,0 +1,231 @@
+.section {
+  position: relative;
+  padding: 3.25rem 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(155, 30, 26, 0.09) 0, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(155, 30, 26, 0.08) 0, transparent 50%),
+    linear-gradient(180deg, rgba(155, 30, 26, 0.03) 0%, rgba(155, 30, 26, 0.01) 100%);
+  border-top: 1px solid rgba(155, 30, 26, 0.14);
+  border-bottom: 1px solid rgba(155, 30, 26, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+}
+
+.title {
+  margin: 0.35rem 0 0.5rem;
+  font-size: clamp(1.55rem, 1.2rem + 1.2vw, 2.2rem);
+  line-height: 1.2;
+  color: var(--ifm-font-color-base);
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 760px;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.65;
+  font-size: 0.98rem;
+}
+
+.rows {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.marqueeMask {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0, black 10%, black 90%, transparent 100%);
+}
+
+.marqueeTrack {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: max-content;
+  animation: marquee-left 26s linear infinite;
+}
+
+.reverse {
+  animation-name: marquee-right;
+  animation-duration: 30s;
+}
+
+.partnerCard {
+  width: 240px;
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.62rem 0.78rem;
+  border-radius: 14px;
+  border: 1px solid rgba(155, 30, 26, 0.18);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 7px 18px rgba(18, 18, 18, 0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.partnerCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(155, 30, 26, 0.36);
+  box-shadow: 0 12px 24px rgba(18, 18, 18, 0.1);
+}
+
+.logoMark {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #9b1e1a 0%, #c53a34 100%);
+  color: #fff;
+  overflow: hidden;
+  padding: 0.25rem;
+}
+
+.logoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.logoText {
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0.2rem;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.partnerName {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--ifm-font-color-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.partnerKind {
+  margin-top: 0.16rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 996px) {
+  .section {
+    padding: 2.6rem 0;
+  }
+
+  .partnerCard {
+    width: 212px;
+    min-width: 212px;
+  }
+
+  .marqueeTrack {
+    animation-duration: 22s;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 2.1rem 0;
+  }
+
+  .rows {
+    gap: 0.65rem;
+  }
+
+  .partnerCard {
+    width: 190px;
+    min-width: 190px;
+    padding: 0.54rem 0.62rem;
+    border-radius: 12px;
+  }
+
+  .logoMark {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 0.66rem;
+  }
+
+  .partnerName {
+    font-size: 0.82rem;
+  }
+
+  .partnerKind {
+    font-size: 0.66rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack,
+  .reverse {
+    animation: none;
+  }
+}
+
+[data-theme='dark'] .section {
+  border-top-color: rgba(240, 125, 119, 0.2);
+  border-bottom-color: rgba(240, 125, 119, 0.15);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(240, 125, 119, 0.12) 0, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(240, 125, 119, 0.1) 0, transparent 50%),
+    linear-gradient(180deg, rgba(240, 125, 119, 0.05) 0%, rgba(240, 125, 119, 0.02) 100%);
+}
+
+[data-theme='dark'] .partnerCard {
+  background: rgba(30, 30, 30, 0.88);
+  border-color: rgba(240, 125, 119, 0.26);
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.25);
+}
+
+[data-theme='dark'] .partnerCard:hover {
+  border-color: rgba(240, 125, 119, 0.46);
+}

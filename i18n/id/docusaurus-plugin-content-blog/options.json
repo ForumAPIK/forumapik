@@ -1,0 +1,58 @@
+{
+  "title": {
+    "message": "Blog",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "Berita, artikel, dan pembaruan terbaru dari APIK",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "Postingan Terbaru",
+    "description": "The label for the left sidebar"
+  },
+  "sidebar.allPostLabel": {
+    "message": "Semua Postingan",
+    "description": "The label of the all posts link"
+  },
+  "blogListPage.documentTitle": {
+    "message": "Blog",
+    "description": "The title of the blog list page"
+  },
+  "blogPostPage.readingTime": {
+    "message": "{readingTime} menit membaca",
+    "description": "The reading time label"
+  },
+  "blogPostPage.lastUpdated": {
+    "message": "Terakhir diperbarui pada {date}",
+    "description": "The last updated date label"
+  },
+  "blogTagsListPage.title": {
+    "message": "Tag",
+    "description": "The title of the tag list page"
+  },
+  "blogTagsPostsPage.title": {
+    "message": "{nPosts} dengan tag \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "blogTagsPostPage.nMorePosts": {
+    "message": "{count} postingan lagi dengan tag ini",
+    "description": "The label for the link to see more posts with a tag"
+  },
+  "blogArchiveTitle": {
+    "message": "Arsip",
+    "description": "The page title for the blog archive"
+  },
+  "blogPaginator.navAriaLabel": {
+    "message": "Navigasi halaman daftar blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "blogPaginator.newerEntries": {
+    "message": "Postingan Lebih Baru",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "blogPaginator.olderEntries": {
+    "message": "Postingan Lebih Lama",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  }
+}

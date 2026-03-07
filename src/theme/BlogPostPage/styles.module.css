@@ -1,0 +1,53 @@
+.relatedSection {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.relatedTitle {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  color: var(--ifm-color-primary);
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.relatedCard {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 10px;
+  background: var(--ifm-card-background-color);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.relatedCard:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary-light);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.relatedCard h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--ifm-heading-color);
+}
+
+.relatedCard p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media (max-width: 996px) {
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+}
