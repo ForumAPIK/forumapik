@@ -12,7 +12,7 @@ type Partner = {
 const partnersRowOne: Partner[] = [
   {name: 'KBRI Seoul', short: 'KBRI', kind: 'Institusi', href: '#', logo: '/img/partners/kbri.png'},
   {name: 'BRIN', short: 'BRIN', kind: 'Institusi', href: '#', logo: '/img/partners/brin.png'},
-  {name: 'Institut Teknologi Sepuluh Nopember', short: 'ITS', kind: 'Universitas', href: '#', logo: '/img/partners/its.png'},
+  {name: 'ITS', short: 'ITS', kind: 'Universitas', href: '#', logo: '/img/partners/its.png'},
   {name: 'AINTLab', short: 'AINTLab', kind: 'Lab', href: '#', logo: '/img/partners/aintlab.png'},
 ];
 

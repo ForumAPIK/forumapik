@@ -16,7 +16,7 @@ export default function Keanggotaan() {
           <div className={styles.aboutContent}>
           <h1>Keanggotaan APIK</h1>
           
-          <section className={styles.section}>
+          <section id="siapa-yang-bisa-bergabung" className={styles.section}>
             <h2>Siapa yang Bisa Bergabung?</h2>
             <p>
               Keanggotaan APIK terbuka untuk seluruh peneliti Indonesia di Korea, termasuk:
@@ -30,7 +30,7 @@ export default function Keanggotaan() {
             </ul>
           </section>
 
-          <section className={styles.section}>
+          <section id="manfaat-menjadi-anggota" className={styles.section}>
             <h2>Manfaat Menjadi Anggota</h2>
             <div className={styles.benefitsList}>
               <div className={styles.benefitCard}>
@@ -153,7 +153,7 @@ export default function Keanggotaan() {
             </div>
           </section>
 
-          <section className={styles.section}>
+          <section id="hubungi-kami" className={styles.section}>
             <h2>Hubungi Kami</h2>
             <p>
               Untuk pertanyaan lebih lanjut tentang keanggotaan, silakan hubungi kami melalui:

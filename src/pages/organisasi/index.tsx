@@ -24,7 +24,7 @@ export default function Organisasi() {
             </p>
           </section>
 
-          <section className={styles.section}>
+          <section id="struktur-kepengurusan" className={styles.section}>
             <h2>Struktur Kepengurusan</h2>
             <div className={styles.orgStructure}>
               <div className={styles.orgBox}>
@@ -79,7 +79,7 @@ export default function Organisasi() {
             </div>
           </section>
 
-          <section className={styles.section}>
+          <section id="periode-kepengurusan-2024-2026" className={styles.section}>
             <h2>Periode Kepengurusan 2024-2026</h2>
             <p>
               Tim pengurus periode 2024-2026 terdiri dari para peneliti Indonesia di Korea 
