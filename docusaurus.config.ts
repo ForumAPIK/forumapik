@@ -91,6 +91,14 @@ const config: Config = {
     colorMode: {
       respectPrefersColorScheme: false,
     },
+    announcementBar: {
+      id: 'site-rebuild-announcement',
+      content:
+        '🚧 APIK sedang rebuild. Hal baru yang seru segera hadir!',
+      backgroundColor: '#9b1e1a',
+      textColor: '#ffffff',
+      isCloseable: true,
+    },
     navbar: {
       title: '',
       logo: {
