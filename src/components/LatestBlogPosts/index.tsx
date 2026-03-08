@@ -1,37 +1,114 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Link from '@docusaurus/Link';
-import {usePluginData} from '@docusaurus/useGlobalData';
 import styles from './styles.module.css';
 
 interface BlogPost {
   id: string;
-  metadata: {
-    permalink: string;
-    title: string;
-    date: string;
-    formattedDate: string;
-    description?: string;
-    frontMatter: {
-      image?: string;
-      [key: string]: any;
-    };
-  };
+  permalink: string;
+  title: string;
+  date: string;
+  description: string;
+  image: string;
 }
 
-interface BlogPluginData {
-  blogPosts: BlogPost[];
-  [key: string]: any;
+const DEFAULT_BLOG_IMAGE = '/img/logo.png';
+
+function formatIndonesianDate(value: string): string {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    return value;
+  }
+  return new Intl.DateTimeFormat('id-ID', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric',
+  }).format(parsed);
 }
 
 export default function LatestBlogPosts() {
-  const blogData = usePluginData('docusaurus-plugin-content-blog', 'default') as BlogPluginData;
-  
-  if (!blogData || !blogData.blogPosts) {
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadBlogPosts() {
+      try {
+        const response = await fetch('/berita/rss.xml', {cache: 'no-store'});
+        if (!response.ok) {
+          throw new Error(`Failed to fetch RSS: ${response.status}`);
+        }
+
+        const xmlText = await response.text();
+        const xml = new DOMParser().parseFromString(xmlText, 'text/xml');
+        const items = Array.from(xml.getElementsByTagName('item'));
+
+        const parsedPosts = items.slice(0, 6).map((item, index) => {
+          const getXmlNodeText = (tagName: string): string => {
+            const node = item.getElementsByTagName(tagName)[0];
+            return node?.textContent?.trim() ?? '';
+          };
+
+          const title = getXmlNodeText('title');
+          const link = getXmlNodeText('link');
+          const pubDate = getXmlNodeText('pubDate');
+          const description = getXmlNodeText('description');
+          
+          // Try to extract image from media:content or other RSS elements
+          const mediaContent = item.getElementsByTagName('media:content')[0];
+          let image = mediaContent?.getAttribute('url') || null;
+          
+          // Fallback: try to extract image from encoded content
+          if (!image) {
+            const namespacedNode = item.getElementsByTagName('content:encoded')[0];
+            const encodedContent = namespacedNode?.textContent || '';
+            const imgMatch = encodedContent.match(/<img[^>]+src=["']([^"']+)["']/);
+            image = imgMatch ? imgMatch[1] : null;
+          }
+
+          if (!image) {
+            image = DEFAULT_BLOG_IMAGE;
+          }
+
+          return {
+            id: `${link}-${index}`,
+            permalink: link,
+            title,
+            date: pubDate,
+            description,
+            image,
+          };
+        });
+
+        if (isMounted) {
+          setPosts(parsedPosts);
+        }
+      } catch (error) {
+        console.error('Failed to load latest blog posts from RSS.', error);
+        if (isMounted) {
+          setPosts([]);
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoading(false);
+        }
+      }
+    }
+
+    loadBlogPosts();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  if (isLoading) {
     return null;
   }
 
-  // Get the 6 latest posts
-  const latestPosts = blogData.blogPosts.slice(0, 6);
+  if (posts.length === 0) {
+    return null;
+  }
 
   return (
     <section className={styles.blogSection}>
@@ -44,30 +121,31 @@ export default function LatestBlogPosts() {
         </div>
 
         <div className={styles.blogGrid}>
-          {latestPosts.map((post, index) => {
-            const {metadata} = post;
-            const {permalink, title, date, formattedDate, description, frontMatter} = metadata;
-            
-            // Extract image from frontMatter or use default
-            const image = frontMatter.image || '/img/default-blog.jpg';
-            
+          {posts.map((post) => {
+            const {permalink, title, date, description, image, id} = post;
+            const dateObj = new Date(date);
+
             return (
-              <article key={index} className={styles.blogCard}>
+              <article key={id} className={styles.blogCard}>
                 <Link to={permalink} className={styles.blogLink}>
                   <div className={styles.imageWrapper}>
-                    <img 
-                      src={image} 
+                    <img
+                      src={image}
                       alt={title}
                       className={styles.blogImage}
                       loading="lazy"
+                      onError={(event) => {
+                        event.currentTarget.onerror = null;
+                        event.currentTarget.src = DEFAULT_BLOG_IMAGE;
+                      }}
                     />
                     <div className={styles.imageOverlay}>
                       <span className={styles.readMore}>Baca Selengkapnya →</span>
                     </div>
                     <div className={styles.dateBadge}>
-                      <span className={styles.dateDay}>{new Date(date).getDate()}</span>
+                      <span className={styles.dateDay}>{dateObj.getDate()}</span>
                       <span className={styles.dateMonth}>
-                        {new Date(date).toLocaleDateString('id-ID', { month: 'short' })}
+                        {dateObj.toLocaleDateString('id-ID', { month: 'short' })}
                       </span>
                     </div>
                   </div>
@@ -78,18 +156,6 @@ export default function LatestBlogPosts() {
                       <p className={styles.blogDescription}>{description}</p>
                     )}
                     <div className={styles.blogMeta}>
-                      <span className={styles.metaDate}>
-                        <svg 
-                          width="14" 
-                          height="14" 
-                          viewBox="0 0 16 16" 
-                          fill="currentColor"
-                          className={styles.metaIcon}
-                        >
-                          <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                        </svg>
-                        {formattedDate}
-                      </span>
                     </div>
                   </div>
                 </Link>

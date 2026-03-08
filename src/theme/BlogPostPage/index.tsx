@@ -91,6 +91,7 @@ function BlogPostPageContent({
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
+    image,
   } = frontMatter;
 
   return (
@@ -106,6 +107,12 @@ function BlogPostPageContent({
         ) : undefined
       }>
       <ContentVisibility metadata={metadata} />
+
+      {image && (
+        <div className={styles.featuredImage}>
+          <img src={image} alt={metadata.title} />
+        </div>
+      )}
 
       <BlogPostItem>{children}</BlogPostItem>
 

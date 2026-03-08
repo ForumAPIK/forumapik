@@ -1,10 +1,8 @@
 ---
 slug: seminar-perjalanan-timur-ke-barat
 title: Menembus Batas - APIK Gelar Seminar Daring "Perjalanan dari Timur ke Barat"
-authors: [apik]
 date: 2024-10-20
 tags: [seminar, webinar, karir, peneliti, argonne]
-image: /img/blog/seminar-kurniawan.jpg
 ---
 
 Asosiasi Peneliti Indonesia di Korea (APIK) untuk pertama kalinya pada periode kepengurusan 2024-2026  menyelenggarakan seminar daring bertajuk **"Perjalanan dari Timur ke Barat"** pada Minggu, 20 Oktober 2024, pukul 18.30 WIB (20.30 Waktu Korea Selatan).

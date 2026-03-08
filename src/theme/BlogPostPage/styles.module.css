@@ -1,3 +1,17 @@
+.featuredImage {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.featuredImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .relatedSection {
   margin-top: 2.5rem;
   padding-top: 1.5rem;

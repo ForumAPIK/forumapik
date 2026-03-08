@@ -1,7 +1,6 @@
 ---
 slug: meet-the-team-pengurus-apik-2024-2026
 title: Meet the Team - Pengurus Harian APIK 2024-2026
-authors: [apik]
 date: 2024-06-28
 tags: [pengurus, kepengurusan, organisasi, tim]
 image: /img/blog/pengurus-apik-2024.jpg
