@@ -1,26 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
-
-type Partner = {
-  name: string;
-  short: string;
-  kind: 'Universitas' | 'Perusahaan' | 'Institusi' | 'Organisasi' | 'Lab';
-  href: string;
-  logo?: string;
-};
-
-const partnersRowOne: Partner[] = [
-  {name: 'KBRI Seoul', short: 'KBRI', kind: 'Institusi', href: '#', logo: '/img/partners/kbri.png'},
-  {name: 'BRIN', short: 'BRIN', kind: 'Institusi', href: '#', logo: '/img/partners/brin.png'},
-  {name: 'ITS', short: 'ITS', kind: 'Universitas', href: '#', logo: '/img/partners/its.png'},
-  {name: 'AINTLab', short: 'AINTLab', kind: 'Lab', href: '#', logo: '/img/partners/aintlab.png'},
-];
-
-const partnersRowTwo: Partner[] = [
-  {name: 'PERPIKA', short: 'PERPIKA', kind: 'Organisasi', href: '#', logo: '/img/partners/perpika.png'},
-  {name: 'IMUSKA', short: 'IMUSKA', kind: 'Organisasi', href: '#', logo: '/img/partners/imuska.png'},
-  {name: 'IPAKR', short: 'IPAKR', kind: 'Organisasi', href: '#', logo: '/img/partners/ipakr.png'},
-];
+import {type Partner, partnersRowOne, partnersRowTwo} from '@site/src/data/partners';
 
 function PartnerCard({partner}: {partner: Partner}): React.ReactElement {
   const [imgError, setImgError] = React.useState(false);

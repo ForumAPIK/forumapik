@@ -15,18 +15,50 @@
   --ifm-color-primary-lightest: #c92923;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Enhanced contrast for light mode */
+  --ifm-link-hover-decoration: underline;
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-darkest);
+  
+  /* Enhanced readability */
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.7;
+  --ifm-leading-desktop: 1.7;
+  --ifm-leading-mobile: 1.6;
+  --ifm-font-weight-base: 400;
+  --ifm-font-weight-semibold: 600;
+  --ifm-font-weight-bold: 700;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.5rem;
+  --ifm-h4-font-size: 1.25rem;
+  --ifm-h5-font-size: 1.125rem;
+  --ifm-h6-font-size: 1rem;
+  --ifm-heading-line-height: 1.3;
+  --ifm-paragraph-margin-bottom: 1.25rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #e63b35;
-  --ifm-color-primary-dark: #e32520;
-  --ifm-color-primary-darker: #d7231e;
-  --ifm-color-primary-darkest: #b21d19;
-  --ifm-color-primary-light: #e9514a;
-  --ifm-color-primary-lighter: #eb5f59;
-  --ifm-color-primary-lightest: #f07d77;
+  --ifm-color-primary: #ff5449;
+  --ifm-color-primary-dark: #ff3d30;
+  --ifm-color-primary-darker: #ff2e1f;
+  --ifm-color-primary-darkest: #e6261a;
+  --ifm-color-primary-light: #ff6b62;
+  --ifm-color-primary-lighter: #ff7a73;
+  --ifm-color-primary-lightest: #ff9995;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Enhanced contrast for dark mode */
+  --ifm-background-color: #1b1b1d;
+  --ifm-background-surface-color: #242526;
+  --ifm-font-color-base: #e3e3e3;
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-lightest);
+  --ifm-card-background-color: #2a2a2c;
+  
+  /* Enhanced readability for dark mode */
+  --ifm-font-weight-base: 400;
+  --ifm-heading-color: #ffffff;
 }
 
 /* Social Media Icons in Navbar */
@@ -80,15 +112,17 @@
 }
 
 .navbar__inner {
-  width: min(100% - 2 * var(--ifm-spacing-horizontal), var(--ifm-container-width-xl));
+  width: min(100% - 0.4rem, var(--ifm-container-width-xl));
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 
 /* Increase navbar logo size while keeping clean alignment */
 .navbar__logo {
   height: auto;
-  margin-right: 0.75rem;
+  margin-right: 0.2rem;
 }
 
 .navbar__logo img {
@@ -108,31 +142,61 @@
 }
 
 .navbar__brand {
-  margin-right: 1.25rem;
-  padding-right: 0.35rem;
+  margin-right: 0.35rem;
+  padding-right: 0;
 }
 
 .navbar__items--left {
-  gap: 0.35rem;
-}
-
-.navbar__link,
-.navbar__item.dropdown .navbar__link {
-  padding-left: 0.72rem;
-  padding-right: 0.72rem;
+  gap: 0.05rem;
 }
 
 .navbar__items--right {
-  gap: 0.2rem;
+  gap: 0;
+}
+
+/* Compact search bar */
+.navbar__search {
+  padding-left: 0.05rem !important;
+  padding-right: 0.05rem !important;
+}
+
+.navbar__search-input {
+  width: 140px !important;
+  padding: 0.3rem 0.5rem !important;
+  font-size: 0.9rem !important;
+}
+
+.navbar__search-input:focus {
+  width: 180px !important;
+}
+
+/* Reduce dropdown padding */
+.navbar__item.dropdown .navbar__link {
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
+}
+
+@media screen and (min-width: 997px) {
+  .navbar__link,
+  .navbar__item.dropdown .navbar__link {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
 }
 
 @media screen and (max-width: 996px) {
   .navbar__inner {
-    width: calc(100% - 2 * var(--ifm-spacing-horizontal));
+    width: calc(100% - 0.4rem);
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
   }
 
   .navbar {
     min-height: 64px;
+  }
+
+  .navbar__logo {
+    margin-right: 0.2rem;
   }
 
   .navbar__logo img {
@@ -141,7 +205,209 @@
   }
 
   .navbar__brand {
-    margin-right: 0.75rem;
+    margin-right: 0.25rem;
     padding-right: 0;
+  }
+
+  .navbar__items--left {
+    gap: 0.05rem;
+  }
+}
+
+/* Enhanced contrast for accessibility */
+.navbar__link {
+  font-weight: 500;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  font-weight: 600;
+}
+
+/* Dark mode enhancements */
+[data-theme='dark'] {
+  /* Better card contrast */
+  --ifm-card-border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .card {
+  border: 1px solid var(--ifm-card-border-color);
+}
+
+[data-theme='dark'] .navbar {
+  background-color: #1b1b1d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .footer {
+  background-color: #1b1b1d;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure buttons have good contrast */
+.button--primary {
+  font-weight: 600;
+}
+
+[data-theme='dark'] .button--secondary {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .button--secondary:hover {
+  border-color: var(--ifm-color-primary);
+  background-color: rgba(255, 84, 73, 0.1);
+}
+
+/* Improve dropdown visibility in dark mode */
+[data-theme='dark'] .dropdown__menu {
+  background-color: #2a2a2c;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .dropdown__link:hover {
+  background-color: rgba(255, 84, 73, 0.1);
+}
+
+/* Enhanced Typography & Readability */
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+/* Improved link readability */
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Better list readability */
+ul, ol {
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Content width for optimal reading */
+article,
+.markdown {
+  max-width: 75ch;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+/* Better text contrast in dark mode */
+[data-theme='dark'] p,
+[data-theme='dark'] li,
+[data-theme='dark'] td {
+  color: #e3e3e3;
+}
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: #ffffff;
+}
+
+/* Improved code readability */
+code {
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+pre code {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Better table readability */
+table {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+th {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Improved blockquote */
+blockquote {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-style: italic;
+  border-left-width: 4px;
+  padding: 1rem 1.5rem;
+}
+
+/* Mobile readability */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.35rem;
+  }
+  
+  article,
+  .markdown {
+    max-width: 100%;
   }
 }

@@ -108,16 +108,16 @@ const config: Config = {
               to: '/tentang/visi-misi',
             },
             {
-              label: 'Pengurus',
-              to: '/tentang/pengurus',
+              label: 'Sejarah',
+              to: '/tentang/sejarah',
             },
             {
               label: 'Logo',
               to: '/tentang/logo',
             },
             {
-              label: 'Sejarah',
-              to: '/tentang/sejarah',
+              label: 'Pengurus 2024-2026',
+              to: '/tentang/pengurus',
             },
           ],
         },
@@ -131,28 +131,87 @@ const config: Config = {
               to: '/organisasi',
             },
             {
-              label: 'Pengurus 2024-2026',
-              to: '/tentang/pengurus',
+              label: 'Direktorat Kelembagaan',
+              to: '/organisasi#direktorat-kelembagaan',
             },
             {
-              label: 'Direktorat Pendidikan dan Keahlian',
+              label: 'Direktorat Pendidikan & Keahlian',
               to: '/organisasi#direktorat-pendidikan-dan-keahlian',
             },
             {
-              label: 'Direktorat Riset dan Inovasi',
+              label: 'Direktorat Riset & Inovasi',
               to: '/organisasi#direktorat-riset-dan-inovasi',
             },
             {
-              label: 'Direktorat Digital dan Media',
+              label: 'Direktorat Digital & Media',
               to: '/organisasi#direktorat-digital-dan-media',
             },
             {
               label: 'Direktorat Kerjasama',
               to: '/organisasi#direktorat-kerjasama',
             },
+          ],
+        },
+        {
+          label: 'Klaster Riset',
+          position: 'left',
+          type: 'dropdown',
+          items: [
             {
-              label: 'Direktorat Kelembagaan',
-              to: '/organisasi#direktorat-kelembagaan',
+              label: 'Kesehatan',
+              to: '/klaster-riset/kesehatan',
+            },
+            {
+              label: 'Teknologi Informasi & Komunikasi',
+              to: '/klaster-riset/teknologi-informasi-dan-komunikasi',
+            },
+            {
+              label: 'Energi & Sumber Daya Mineral',
+              to: '/klaster-riset/energi-dan-sumber-daya-mineral',
+            },
+            {
+              label: 'Teknologi Pangan, Pertanian & Bioteknologi',
+              to: '/klaster-riset/teknologi-pangan-pertanian-dan-bioteknologi',
+            },
+            {
+              label: 'Sumber Daya Hayati, Lingkungan & Kehutanan',
+              to: '/klaster-riset/sumber-daya-hayati-lingkungan-dan-kehutanan',
+            },
+            {
+              label: 'Baterai, Elektrokimia & Sel Surya',
+              to: '/klaster-riset/baterai-elektrokimia-sel-surya',
+            },
+            {
+              label: 'Elektronika & Instrumentasi',
+              to: '/klaster-riset/elektronika-dan-instrumentasi',
+            },
+            {
+              label: 'Metalurgi, Material, Nanoteknologi & Radiasi',
+              to: '/klaster-riset/metalurgi-material-nanoteknologi-dan-radiasi',
+            },
+            {
+              label: 'Kebencanaan, Infrastruktur, Sipil, Arsitektur & Tata Kota',
+              to: '/klaster-riset/kebencanaan-infrastruktur-sipil-arsitektur-dan-tata-kota',
+            },
+            {
+              label: 'Kelautan',
+              to: '/klaster-riset/kelautan',
+            },
+            {
+              label: 'Sosial, Budaya & Bahasa',
+              to: '/klaster-riset/sosial-budaya-dan-bahasa',
+            },
+            {
+              label: 'Ekonomi & Bisnis',
+              to: '/klaster-riset/ekonomi-dan-bisnis',
+            },
+            {
+              label: 'Teknologi Industri & Manufaktur',
+              to: '/klaster-riset/teknologi-industri-dan-manufaktur',
+            },
+            {
+              label: 'Transportasi',
+              to: '/klaster-riset/transportasi',
             },
           ],
         },
@@ -175,27 +234,40 @@ const config: Config = {
             },
           ],
         },
-        {to: '/berita', label: 'Berita', position: 'left'},
-        {to: '/kerjasama', label: 'Kerjasama', position: 'left'},
-        {to: '/kontak', label: 'Kontak', position: 'left'},
+        {
+          label: 'Berita',
+          position: 'left',
+          to: '/berita',
+        },
+        {
+          label: 'Kerjasama',
+          position: 'left',
+          to: '/kerjasama',
+        },
+        {
+          label: 'Kontak',
+          position: 'left',
+          to: '/kontak',
+        },
         {type: 'search', position: 'right'},
         {
-          href: 'https://www.youtube.com/@ForumAPIK',
+          label: 'Sosial Media',
           position: 'right',
-          className: 'header-youtube-link',
-          'aria-label': 'YouTube channel',
-        },
-        {
-          href: 'https://www.instagram.com/forumapik/',
-          position: 'right',
-          className: 'header-instagram-link',
-          'aria-label': 'Instagram profile',
-        },
-        {
-          href: 'https://www.facebook.com/forumAPIK/',
-          position: 'right',
-          className: 'header-facebook-link',
-          'aria-label': 'Facebook page',
+          type: 'dropdown',
+          items: [
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@ForumAPIK',
+            },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/forumapik/',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/forumAPIK/',
+            },
+          ],
         },
       ],
     },

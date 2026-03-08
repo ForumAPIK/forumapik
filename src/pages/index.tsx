@@ -7,34 +7,11 @@ import WelcomeSection from '@site/src/components/WelcomeSection';
 import PartnerMarquee from '@site/src/components/PartnerMarquee';
 import ResearchClusters from '@site/src/components/ResearchClusters';
 import LatestBlogPosts from '@site/src/components/LatestBlogPosts';
-import HeroSlider, { SlideItem } from '@site/src/components/HeroSlider';
+import HeroSlider from '@site/src/components/HeroSlider';
 import Heading from '@theme/Heading';
+import {heroSlides} from '@site/src/data/heroSlides';
 
 import styles from './index.module.css';
-
-// Configure your slider items here
-const heroSlides: SlideItem[] = [
-  {
-    type: 'image',
-    src: '/img/apik-team2426.jpg',
-    alt: 'Research Collaboration',
-    link: '/tentang/pengurus',
-  },
-   {
-    type: 'image',
-    src: '/img/apik-kerjasama.jpeg',
-    alt: 'APIK Logo',
-    link: '/kerjasama',
-  },
-  // Add more slides here
-  // For video example:
-  // {
-  //   type: 'video',
-  //   src: '/video/your-video.mp4',
-  //   title: 'Your Video Title',
-  //   description: 'Video description',
-  // },
-];
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();

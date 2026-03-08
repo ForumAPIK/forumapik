@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Breadcrumb from '../../components/Breadcrumb';
+import {cooperationTypes, collaborationForms, currentPartnerships} from '@site/src/data/cooperation';
 import styles from '../tentang/styles.module.css';
 
 export default function Kerjasama() {
@@ -28,45 +29,16 @@ export default function Kerjasama() {
             <h2>Jenis Kerjasama</h2>
             
             <div className={styles.cooperationTypes}>
-              <div className={styles.cooperationType}>
-                <h3>🏛️ Pemerintah</h3>
-                <ul>
-                  <li>Kedutaan Besar RI di Seoul (KBRI)</li>
-                  <li>Atase Pendidikan dan Kebudayaan (Atdikbud)</li>
-                  <li>Kementerian Riset, Teknologi, dan Pendidikan Tinggi RI</li>
-                  <li>LPDP dan lembaga beasiswa Indonesia</li>
-                </ul>
-              </div>
-              
-              <div className={styles.cooperationType}>
-                <h3>🎓 Universitas & Institusi Akademik</h3>
-                <ul>
-                  <li>Universitas-universitas di Indonesia</li>
-                  <li>Universitas-universitas di Korea Selatan</li>
-                  <li>Lembaga riset Indonesia (BRIN, LIPI, dll)</li>
-                  <li>Research institutes di Korea</li>
-                </ul>
-              </div>
-              
-              <div className={styles.cooperationType}>
-                <h3>🏭 Industri & Korporasi</h3>
-                <ul>
-                  <li>Perusahaan teknologi Indonesia dan Korea</li>
-                  <li>Start-up ecosystem</li>
-                  <li>Industry partners untuk research collaboration</li>
-                  <li>Corporate social responsibility programs</li>
-                </ul>
-              </div>
-              
-              <div className={styles.cooperationType}>
-                <h3>👥 Organisasi & Komunitas</h3>
-                <ul>
-                  <li>Organisasi peneliti Indonesia di negara lain</li>
-                  <li>Komunitas Indonesia di Korea</li>
-                  <li>International research associations</li>
-                  <li>Alumni networks</li>
-                </ul>
-              </div>
+              {cooperationTypes.map((type) => (
+                <div key={type.title} className={styles.cooperationType}>
+                  <h3>{type.emoji} {type.title}</h3>
+                  <ul>
+                    {type.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </section>
 
@@ -74,35 +46,12 @@ export default function Kerjasama() {
             <h2>Bentuk Kolaborasi</h2>
             
             <div className={styles.collaborationForms}>
-              <div className={styles.collabCard}>
-                <h3>🔬 Research Collaboration</h3>
-                <p>Joint research projects, publikasi bersama, dan sharing resources</p>
-              </div>
-              
-              <div className={styles.collabCard}>
-                <h3>📚 Knowledge Exchange</h3>
-                <p>Seminar, workshop, webinar, dan training programs</p>
-              </div>
-              
-              <div className={styles.collabCard}>
-                <h3>👨‍🎓 Student Exchange</h3>
-                <p>Program pertukaran mahasiswa dan peneliti</p>
-              </div>
-              
-              <div className={styles.collabCard}>
-                <h3>💼 Career Development</h3>
-                <p>Job fairs, internship programs, dan career mentoring</p>
-              </div>
-              
-              <div className={styles.collabCard}>
-                <h3>💰 Funding Support</h3>
-                <p>Grant applications, scholarship information, dan funding opportunities</p>
-              </div>
-              
-              <div className={styles.collabCard}>
-                <h3>🌏 Cultural Exchange</h3>
-                <p>Event budaya, diplomasi ilmiah, dan people-to-people exchange</p>
-              </div>
+              {collaborationForms.map((form) => (
+                <div key={form.title} className={styles.collabCard}>
+                  <h3>{form.emoji} {form.title}</h3>
+                  <p>{form.description}</p>
+                </div>
+              ))}
             </div>
           </section>
 
@@ -110,29 +59,12 @@ export default function Kerjasama() {
             <h2>Kerjasama Terkini</h2>
             
             <div className={styles.partnershipList}>
-              <div className={styles.partnershipItem}>
-                <h3>KBRI Seoul & Atdikbud</h3>
-                <p>
-                  Kerjasama berkelanjutan dalam berbagai kegiatan pendidikan, riset, dan budaya. 
-                  Termasuk dukungan untuk event APIK dan fasilitasi hubungan dengan institusi Korea.
-                </p>
-              </div>
-              
-              <div className={styles.partnershipItem}>
-                <h3>Universitas di Indonesia</h3>
-                <p>
-                  Kolaborasi riset, seminar bersama, dan program mentoring untuk mahasiswa 
-                  yang berencana melanjutkan studi ke Korea.
-                </p>
-              </div>
-              
-              <div className={styles.partnershipItem}>
-                <h3>Research Institutes Korea</h3>
-                <p>
-                  Partnership untuk joint research, akses ke fasilitas riset, dan 
-                  technology transfer ke Indonesia.
-                </p>
-              </div>
+              {currentPartnerships.map((partnership) => (
+                <div key={partnership.title} className={styles.partnershipItem}>
+                  <h3>{partnership.title}</h3>
+                  <p>{partnership.description}</p>
+                </div>
+              ))}
             </div>
           </section>
 

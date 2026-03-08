@@ -1,7 +1,103 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 import Breadcrumb from '@site/src/components/Breadcrumb';
+import {pengurusData, direktoratData, LeadershipPosition} from '@site/src/data/leadership';
 import styles from './styles.module.css';
+
+// Helper to extract Google Scholar photo from profile URL
+function getGoogleScholarPhoto(scholarUrl: string): string | null {
+  try {
+    const url = new URL(scholarUrl);
+    const userId = url.searchParams.get('user');
+    if (userId) {
+      return `https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=${userId}`;
+    }
+  } catch (e) {
+    // Invalid URL
+  }
+  return null;
+}
+
+// Leadership Card Component with photo loading logic
+function LeadershipCard({position}: {position: LeadershipPosition}) {
+  const [imgError, setImgError] = useState(false);
+  const [imgLoading, setImgLoading] = useState(true);
+  
+  // Determine photo source: local file, Google Scholar, or fallback
+  const photoSrc = position.photo || 
+    (position.link && position.link.includes('scholar.google') 
+      ? getGoogleScholarPhoto(position.link) 
+      : null);
+  
+  const isExternalPhoto = photoSrc && (photoSrc.startsWith('http://') || photoSrc.startsWith('https://'));
+  
+  return (
+    <div className={styles.leaderCard}>
+      <div className={styles.photoWrapper}>
+        {photoSrc && !imgError ? (
+          <>
+            {imgLoading && (
+              <div className={styles.photoPlaceholder}>
+                <div className={styles.loadingSpinner}></div>
+              </div>
+            )}
+            <img
+              src={photoSrc}
+              alt={position.name}
+              className={`${styles.leaderPhoto} ${imgLoading ? styles.hidden : ''}`}
+              onLoad={() => setImgLoading(false)}
+              onError={() => {
+                setImgError(true);
+                setImgLoading(false);
+              }}
+            />
+          </>
+        ) : (
+          <div className={styles.photoPlaceholder}>
+            <svg 
+              className={styles.placeholderIcon} 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={1.5} 
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" 
+              />
+            </svg>
+          </div>
+        )}
+        {isExternalPhoto && !imgError && (
+          <span className={styles.externalBadge} title="From Google Scholar">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+          </span>
+        )}
+      </div>
+      <h3>{position.title}</h3>
+      <p className={styles.name}>{position.name}</p>
+      <p className={styles.role}>
+        {position.subtitle}
+        {position.link && position.link.includes('scholar.google') && (
+          <Link 
+            to={position.link}
+            className={styles.scholarIconLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Google Scholar Profile"
+          >
+            <span className={styles.scholarIcon}>🎓</span>
+          </Link>
+        )}
+      </p>
+    </div>
+  );
+}
 
 export default function Pengurus() {
   return (
@@ -25,41 +121,9 @@ export default function Pengurus() {
               </p>
               
               <div className={styles.leadershipGrid}>
-                <div className={styles.leaderCard}>
-                  <h3>Ketua Umum</h3>
-                  <p className={styles.name}>Nurhadi Sukma Waluyo</p>
-                  <p className={styles.role}>Ph.D.</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Wakil Ketua I</h3>
-                  <p className={styles.name}>Vanna Chrismas Silalahi</p>
-                  <p className={styles.role}>Ph.D.</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Wakil Ketua II</h3>
-                  <p className={styles.name}>Romel Hidayat</p>
-                  <p className={styles.role}>Ph.D.</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Wakil Ketua III</h3>
-                  <p className={styles.name}>Agus Ismail</p>
-                  <p className={styles.role}>Ph.D.</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Sekretaris</h3>
-                  <p className={styles.name}>Heri Akhmadi</p>
-                  <p className={styles.role}>Ph.D.</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Bendahara</h3>
-                  <p className={styles.name}>Ancilla Katherina Kustedjo</p>
-                  <p className={styles.role}>Researcher</p>
-                </div>
+                {pengurusData.map((position) => (
+                  <LeadershipCard key={position.title} position={position} />
+                ))}
               </div>
             </section>
 
@@ -71,35 +135,9 @@ export default function Pengurus() {
               </p>
               
               <div className={styles.leadershipGrid}>
-                <div className={styles.leaderCard}>
-                  <h3>Direktorat Kelembagaan</h3>
-                  <p className={styles.name}>Byantara Darsan Purusatama</p>
-                  <p className={styles.role}>Director</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Direktorat Pendidikan dan Keahlian</h3>
-                  <p className={styles.name}>Iyan Subiyanto</p>
-                  <p className={styles.role}>Director</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Direktorat Riset dan Inovasi</h3>
-                  <p className={styles.name}>Syahril Sulaiman</p>
-                  <p className={styles.role}>Director</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Direktorat Digital dan Media</h3>
-                  <p className={styles.name}>Aji Teguh Prihatno</p>
-                  <p className={styles.role}>Director</p>
-                </div>
-
-                <div className={styles.leaderCard}>
-                  <h3>Direktorat Kerjasama</h3>
-                  <p className={styles.name}>Reza Asriandi Ekaputra</p>
-                  <p className={styles.role}>Director</p>
-                </div>
+                {direktoratData.map((position) => (
+                  <LeadershipCard key={position.title} position={position} />
+                ))}
               </div>
             </section>
 
