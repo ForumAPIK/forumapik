@@ -338,6 +338,33 @@
   color: var(--ifm-color-emphasis-700);
 }
 
+.archiveLeadershipLinks {
+  margin-top: 0.75rem;
+}
+
+.archiveLeadershipLink {
+  display: inline-block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ifm-color-primary-darkest);
+  border: 1px solid rgba(155, 30, 26, 0.25);
+  background: rgba(155, 30, 26, 0.08);
+  border-radius: 999px;
+  padding: 0.32rem 0.75rem;
+}
+
+.archiveLeadershipLink:hover {
+  text-decoration: underline;
+  background: rgba(155, 30, 26, 0.14);
+}
+
+[data-theme='dark'] .archiveLeadershipLink {
+  color: #ffb4ad;
+  border-color: rgba(255, 84, 73, 0.35);
+  background: rgba(255, 84, 73, 0.18);
+}
+
 /* Organization Structure */
 .orgStructure {
   display: grid;

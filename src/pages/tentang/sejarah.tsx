@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
 import Breadcrumb from '@site/src/components/Breadcrumb';
 import styles from './styles.module.css';
 
@@ -86,6 +87,11 @@ export default function History() {
                       organisasi yang solid, membentuk klaster-klaster riset, dan menyelenggarakan 
                       berbagai kegiatan ilmiah dan networking.
                     </p>
+                    <div className={styles.archiveLeadershipLinks}>
+                      <Link to="/tentang/pengurus-2020-2022" className={styles.archiveLeadershipLink}>
+                        Lihat Arsip Pengurus 2020-2022
+                      </Link>
+                    </div>
                   </div>
                 </div>
 
@@ -98,6 +104,11 @@ export default function History() {
                       kegiatan, dan penguatan hubungan dengan institusi riset di Indonesia dan Korea. 
                       APIK juga aktif menyelenggarakan webinar, seminar, dan workshop.
                     </p>
+                    <div className={styles.archiveLeadershipLinks}>
+                      <Link to="/tentang/pengurus-2022-2024" className={styles.archiveLeadershipLink}>
+                        Lihat Arsip Pengurus 2022-2024
+                      </Link>
+                    </div>
                   </div>
                 </div>
 
@@ -110,6 +121,11 @@ export default function History() {
                       Ketua Umum. APIK terus berkomitmen untuk menjadi organisasi terdepan yang mendukung 
                       kemajuan ilmu pengetahuan dan riset di Indonesia melalui kolaborasi berkelas dunia.
                     </p>
+                    <div className={styles.archiveLeadershipLinks}>
+                      <Link to="/tentang/pengurus" className={styles.archiveLeadershipLink}>
+                        Lihat Pengurus Saat Ini
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

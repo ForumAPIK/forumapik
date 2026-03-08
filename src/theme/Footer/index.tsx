@@ -171,7 +171,7 @@ function Footer(): React.ReactElement {
             © {currentYear} Asosiasi Peneliti Indonesia Korea (APIK). All rights reserved.
           </p>
           <p className={styles.poweredBy}>
-            Supported by KBRI Seoul · 🤝 AINTLab · Built with Docusaurus
+            Supported by KBRI Seoul · Built with Docusaurus
           </p>
         </div>
       </div>

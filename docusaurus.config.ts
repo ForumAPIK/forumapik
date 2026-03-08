@@ -94,7 +94,7 @@ const config: Config = {
     announcementBar: {
       id: 'site-rebuild-announcement',
       content:
-        '🚧 APIK sedang rebuild. Hal baru yang seru segera hadir!',
+        '🚧 APIK sedang rebuild. Hal baru yang seru segera hadir! <a href="/development">Lihat changelog timeline</a>.',
       backgroundColor: '#9b1e1a',
       textColor: '#ffffff',
       isCloseable: true,

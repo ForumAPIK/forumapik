@@ -105,6 +105,17 @@
   filter: none;
 }
 
+/* Announcement bar link styling */
+.announcementBarContent a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.announcementBarContent a:hover {
+  text-decoration-thickness: 2px;
+}
+
 /* Align navbar content with page content margins */
 .navbar {
   padding-left: 0;
