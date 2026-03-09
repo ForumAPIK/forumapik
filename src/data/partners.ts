@@ -10,8 +10,6 @@ export const partnersRowOne: Partner[] = [
   {name: 'KBRI Seoul', short: 'KBRI', kind: 'Institusi', href: '#', logo: '/img/partners/kbri.png'},
   {name: 'BRIN', short: 'BRIN', kind: 'Institusi', href: '#', logo: '/img/partners/brin.png'},
   {name: 'ITS', short: 'ITS', kind: 'Universitas', href: '#', logo: '/img/partners/its.png'},
-  {name: 'SJU', short: 'SJU', kind: 'Universitas', href: '#', logo: '/img/partners/sju.png'},
-  {name: 'AINTLab', short: 'AINTLab', kind: 'Lab', href: '#', logo: '/img/partners/aintlab.png'},
   {name: 'UBAYA', short: 'UBAYA', kind: 'Universitas', href: '#', logo: '/img/partners/ubaya.png'},
   {name: 'UNDIP', short: 'UNDIP', kind: 'Universitas', href: '#', logo: '/img/partners/undip.png'},
   {name: 'UI', short: 'UI', kind: 'Universitas', href: '#', logo: '/img/partners/ui.png'},
