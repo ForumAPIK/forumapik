@@ -23,8 +23,8 @@ export default function Pengurus20202022() {
 
             <section className={styles.section}>
               <h2>Struktur Kepengurusan APIK Masa Jabatan 2020-2022</h2>
-              
-              <h3>Pimpinan</h3>
+
+              <h3 style={{marginTop: '2rem'}}>Pimpinan</h3>
               <div className={styles.leadershipTable}>
                 <div className={styles.leadershipRow}>
                   <span className={styles.position}>Ketua Umum</span>
@@ -189,6 +189,18 @@ export default function Pengurus20202022() {
                 <li>Penguatan komunitas peneliti Indonesia di Korea.</li>
                 <li>Memfasilitasi kolaborasi riset antara peneliti Indonesia dan Korea.</li>
                 <li>Penyelenggaraan berbagai kegiatan ilmiah dan networking.</li>
+              </ul>
+            </section>
+
+            <section className={styles.section}>
+              <h2>Kontak Arsip</h2>
+              <p>
+                Untuk informasi lebih lanjut mengenai kepengurusan periode 2022-2024, 
+                silakan hubungi kami:
+              </p>
+              <ul>
+                <li>Email: <a href="mailto:info@forumapik.org">info@forumapik.org</a></li>
+                <li>Website: <a href="https://forumapik.org" target="_blank" rel="noopener noreferrer">forumapik.org</a></li>
               </ul>
             </section>
 

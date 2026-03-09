@@ -765,6 +765,47 @@
   color: var(--ifm-font-color-base);
 }
 
+/* Advisory Board */
+.advisoryBoard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.advisorCard {
+  background: linear-gradient(135deg, rgba(155, 30, 26, 0.05) 0%, rgba(155, 30, 26, 0.1) 100%);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid var(--ifm-color-primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advisorCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.advisorCard h4 {
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.advisorName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Committees Grid */
 .committeesGrid {
   display: grid;
@@ -882,6 +923,10 @@
   }
 
   .committeesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .advisoryBoard {
     grid-template-columns: 1fr;
   }
 

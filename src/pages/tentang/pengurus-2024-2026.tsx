@@ -165,6 +165,18 @@ export default function Pengurus20242026() {
             </section>
 
             <section className={styles.section}>
+              <h2>Kontak Arsip</h2>
+              <p>
+                Untuk informasi lebih lanjut mengenai kepengurusan periode 2022-2024, 
+                silakan hubungi kami:
+              </p>
+              <ul>
+                <li>Email: <a href="mailto:info@forumapik.org">info@forumapik.org</a></li>
+                <li>Website: <a href="https://forumapik.org" target="_blank" rel="noopener noreferrer">forumapik.org</a></li>
+              </ul>
+            </section>
+
+            <section className={styles.section}>
               <h2>Navigasi Arsip Pengurus</h2>
               <div className={styles.archiveLinks}>
                 <Link to="/tentang/pengurus-2020-2022" className={styles.archiveLink}>
