@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Breadcrumb from '@site/src/components/Breadcrumb';
 import styles from './development.module.css';
+import stylesTentang from './tentang/styles.module.css';
+
 
 type ChangelogItem = {
   date: string;
@@ -113,7 +115,7 @@ export default function DevelopmentPage(): React.ReactElement {
       <main className={styles.page}>
         <div className="container">
           <Breadcrumb items={[{label: 'Development'}]} />
-
+          <div className={stylesTentang.aboutContent}>
           <header className={styles.header}>
             <h1>Development Timeline</h1>
             <p>
@@ -145,6 +147,7 @@ export default function DevelopmentPage(): React.ReactElement {
               </article>
             ))}
           </section>
+        </div>
         </div>
       </main>
     </Layout>
