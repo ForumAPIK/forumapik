@@ -1,6 +1,6 @@
 ---
 title: "Webinar APIK: Energy Security - Challenges & Solutions"
-date: 2026-01-25
+date: 2026-01-14
 tags: [webinar, energi, ketahanan, arcandra-tahar, riset]
 image: /img/blog/energy-challenges2026.jpeg
 ---
