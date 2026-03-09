@@ -1,5 +1,4 @@
 ---
-slug: mini-workshop-ai-pendidikan
 title: Inovasi AI dan Pendidikan - APIK Adakan Mini Workshop dan Perkenalkan Pengurus Baru
 date: 2024-10-30
 tags: [workshop, ai, pendidikan, generative-ai, pengurus]

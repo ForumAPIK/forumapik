@@ -1,5 +1,4 @@
 ---
-slug: perayaan-hut-ri-79-kbri-seoul
 title: Perayaan Hari Kemerdekaan RI ke-79 di KBRI Seoul - Semarak Nasionalisme dan Kebersamaan
 date: 2024-08-17
 tags: [hut-ri, kemerdekaan, kbri-seoul, dirgahayu]

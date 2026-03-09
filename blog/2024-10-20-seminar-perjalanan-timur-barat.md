@@ -1,5 +1,4 @@
 ---
-slug: seminar-perjalanan-timur-ke-barat
 title: Menembus Batas - APIK Gelar Seminar Daring "Perjalanan dari Timur ke Barat"
 date: 2024-10-20
 tags: [seminar, webinar, karir, peneliti, argonne]

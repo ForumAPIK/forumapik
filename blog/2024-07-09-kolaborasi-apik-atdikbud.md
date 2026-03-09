@@ -1,5 +1,4 @@
 ---
-slug: kolaborasi-apik-atdikbud
 title: Memperkuat Sinergi - Potensi Kolaborasi APIK dan Atdikbud di Seoul
 date: 2024-07-09
 tags: [kolaborasi, atdikbud, kbri, kerjasama, pendidikan]

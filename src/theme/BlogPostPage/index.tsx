@@ -17,6 +17,7 @@ import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import BlogPostPageStructuredData from '@theme/BlogPostPage/StructuredData';
 import TOC from '@theme/TOC';
 import ContentVisibility from '@theme/ContentVisibility';
+import Breadcrumb from '@site/src/components/Breadcrumb';
 import styles from './styles.module.css';
 
 function RelatedPosts({sidebar}: {sidebar?: BlogSidebar}): React.ReactElement | null {
@@ -106,6 +107,15 @@ function BlogPostPageContent({
           />
         ) : undefined
       }>
+      <div className={styles.breadcrumbContainer}>
+        <Breadcrumb
+          items={[
+            {label: 'Berita', path: '/berita'},
+            {label: metadata.title},
+          ]}
+        />
+      </div>
+
       <ContentVisibility metadata={metadata} />
 
       {image && (

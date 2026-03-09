@@ -1,6 +1,6 @@
 .page {
-  padding: 2rem 0 3rem;
-  min-height: calc(100vh - 60px);
+  padding: var(--apik-page-padding-top) 0 var(--apik-page-padding-bottom-wide);
+  min-height: var(--apik-page-min-height);
 }
 
 .header {
@@ -112,10 +112,6 @@
 }
 
 @media (max-width: 576px) {
-  .page {
-    padding-top: 1.5rem;
-  }
-
   .header h1 {
     font-size: 1.7rem;
   }

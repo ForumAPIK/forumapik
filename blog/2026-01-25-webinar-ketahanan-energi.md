@@ -1,7 +1,6 @@
 ---
-slug: webinar-energy-security-challenges-solutions
 title: "Webinar APIK: Energy Security - Challenges & Solutions"
-date: 2025-01-25
+date: 2026-01-25
 tags: [webinar, energi, ketahanan, arcandra-tahar, riset]
 image: /img/blog/energy-challenges2026.jpeg
 ---
@@ -14,7 +13,7 @@ Bagaimana strategi terbaik menghadapi tantangan ketahanan energi di masa depan? 
 
 ## 🌐 Energy Security: Challenges & Solutions
 
-**📅 Minggu, 25 Januari 2025**  
+**📅 Minggu, 25 Januari 2026**  
 **⏰ 18:00 KST / 16:00 WIB**
 
 ### 🎙 Narasumber

@@ -1,27 +1,3 @@
-.blogListWrapper {
-  width: 100%;
-}
-
 .breadcrumbContainer {
-  background-color: #f8f8f8;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 2rem;
-}
-
-.breadcrumbContainer > :global([class*="breadcrumb"]) {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .breadcrumbContainer {
-    padding: 1rem 0;
-    margin-bottom: 1.5rem;
-  }
-
-  .breadcrumbContainer > :global([class*="breadcrumb"]) {
-    padding: 0 1rem;
-  }
+  margin-bottom: 0.5rem;
 }

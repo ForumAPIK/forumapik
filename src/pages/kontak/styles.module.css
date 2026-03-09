@@ -1,7 +1,6 @@
 .kontakPage {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  min-height: calc(100vh - var(--ifm-navbar-height) - var(--ifm-footer-height));
+  padding: var(--apik-page-padding-top) 0 var(--apik-page-padding-bottom-wide);
+  min-height: var(--apik-page-min-height);
 }
 
 .kontakContent {

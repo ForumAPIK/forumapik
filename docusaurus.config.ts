@@ -124,40 +124,13 @@ const config: Config = {
               to: '/tentang/logo',
             },
             {
-              label: 'Pengurus 2024-2026',
-              to: '/tentang/pengurus',
-            },
-          ],
-        },
-        {
-          label: 'Organisasi',
-          position: 'left',
-          type: 'dropdown',
-          items: [
-            {
               label: 'Struktur Organisasi',
               to: '/organisasi',
             },
             {
-              label: 'Direktorat Kelembagaan',
-              to: '/organisasi#direktorat-kelembagaan',
-            },
-            {
-              label: 'Direktorat Pendidikan & Keahlian',
-              to: '/organisasi#direktorat-pendidikan-dan-keahlian',
-            },
-            {
-              label: 'Direktorat Riset & Inovasi',
-              to: '/organisasi#direktorat-riset-dan-inovasi',
-            },
-            {
-              label: 'Direktorat Digital & Media',
-              to: '/organisasi#direktorat-digital-dan-media',
-            },
-            {
-              label: 'Direktorat Kerjasama',
-              to: '/organisasi#direktorat-kerjasama',
-            },
+              label: 'Pengurus 2024-2026',
+              to: '/tentang/pengurus',
+            }
           ],
         },
         {

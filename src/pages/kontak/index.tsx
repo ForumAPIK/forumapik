@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Breadcrumb from '../../components/Breadcrumb';
 import styles from './styles.module.css';
+import aboutStyles from '../tentang/styles.module.css';
 
 export default function Kontak() {
   return (
@@ -13,7 +14,7 @@ export default function Kontak() {
           <Breadcrumb items={[
             { label: 'Kontak' }
           ]} />
-          <div className={styles.kontakContent}>
+          <div className={aboutStyles.aboutContent}>
             <h1>Hubungi Kami</h1>
             
             <section className={styles.section}>
@@ -48,23 +49,6 @@ export default function Kontak() {
                   <strong>Indonesia - Korea</strong><br />
                   Asosiasi Peneliti Indonesia Korea
                 </p>
-              </div>
-
-              <div className={styles.contactCard}>
-                <div className={styles.contactIcon}>
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V9h14v10zM5 7V5h14v2H5zm2 4h10v2H7v-2z" />
-                  </svg>
-                </div>
-                <h3>Website</h3>
-                <p>Kunjungi website kami:</p>
-                <a 
-                  href="https://www.forumapik.org" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.contactLink}>
-                  www.forumapik.org
-                </a>
               </div>
             </div>
 

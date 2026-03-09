@@ -43,53 +43,22 @@ export default function History() {
               <h2>Timeline Perkembangan APIK</h2>
               <div className={styles.timeline}>
                 <div className={styles.timelineItem}>
-                  <div className={styles.timelineYear}>27 Oktober 2019</div>
+                  <div className={styles.timelineYear}>2024-2026</div>
                   <div className={styles.timelineContent}>
-                    <h3>Pertemuan Awal</h3>
+                    <h3>Periode Kepengurusan Ketiga (Saat Ini)</h3>
                     <p>
-                      Pertemuan pertama diinisiasi oleh KBRI Seoul bersama beberapa perintis APIK. 
-                      Para peneliti Indonesia di Korea berkumpul untuk mendiskusikan pembentukan 
-                      organisasi yang akan menjadi wadah kolaborasi riset dan inovasi.
+                      Periode kepengurusan saat ini dipimpin oleh Nurhadi Sukma Waluyo, Ph.D. sebagai 
+                      Ketua Umum. APIK terus berkomitmen untuk menjadi organisasi terdepan yang mendukung 
+                      kemajuan ilmu pengetahuan dan riset di Indonesia melalui kolaborasi berkelas dunia.
                     </p>
-                  </div>
-                </div>
-
-                <div className={styles.timelineItem}>
-                  <div className={styles.timelineYear}>24-25 November 2019</div>
-                  <div className={styles.timelineContent}>
-                    <h3>Pertemuan dengan Presiden RI</h3>
-                    <p>
-                      Para perintis APIK bertemu dengan Presiden Republik Indonesia, Bapak Joko Widodo, 
-                      di Busan, Korea Selatan. Pertemuan ini mengokohkan komitmen pemerintah Indonesia 
-                      untuk mendukung peneliti Indonesia di luar negeri.
-                    </p>
-                  </div>
-                </div>
-
-                <div className={styles.timelineItem}>
-                  <div className={styles.timelineYear}>21 Desember 2019</div>
-                  <div className={styles.timelineContent}>
-                    <h3>Pendirian Resmi APIK</h3>
-                    <p>
-                      Asosiasi Peneliti Indonesia Korea (APIK) resmi didirikan di KBRI Seoul. 
-                      Pendirian ini menjadi tonggak bersejarah bagi komunitas peneliti Indonesia 
-                      di Korea Selatan.
-                    </p>
-                  </div>
-                </div>
-
-                <div className={styles.timelineItem}>
-                  <div className={styles.timelineYear}>2020-2022</div>
-                  <div className={styles.timelineContent}>
-                    <h3>Periode Kepengurusan Pertama</h3>
-                    <p>
-                      APIK menjalani periode kepengurusan pertama dengan fokus membangun struktur 
-                      organisasi yang solid, membentuk klaster-klaster riset, dan menyelenggarakan 
-                      berbagai kegiatan ilmiah dan networking.
-                    </p>
+                    <img 
+                      src="/img/apik-team2426.jpg" 
+                      alt="Pengurus APIK 2024-2026" 
+                      className={styles.timelineImage}
+                    />
                     <div className={styles.archiveLeadershipLinks}>
-                      <Link to="/tentang/pengurus-2020-2022" className={styles.archiveLeadershipLink}>
-                        Lihat Arsip Pengurus 2020-2022
+                      <Link to="/tentang/pengurus" className={styles.archiveLeadershipLink}>
+                        Lihat Pengurus Saat Ini
                       </Link>
                     </div>
                   </div>
@@ -113,19 +82,70 @@ export default function History() {
                 </div>
 
                 <div className={styles.timelineItem}>
-                  <div className={styles.timelineYear}>2024-2026</div>
+                  <div className={styles.timelineYear}>2020-2022</div>
                   <div className={styles.timelineContent}>
-                    <h3>Periode Kepengurusan Ketiga (Saat Ini)</h3>
+                    <h3>Periode Kepengurusan Pertama</h3>
                     <p>
-                      Periode kepengurusan saat ini dipimpin oleh Nurhadi Sukma Waluyo, Ph.D. sebagai 
-                      Ketua Umum. APIK terus berkomitmen untuk menjadi organisasi terdepan yang mendukung 
-                      kemajuan ilmu pengetahuan dan riset di Indonesia melalui kolaborasi berkelas dunia.
+                      APIK menjalani periode kepengurusan pertama dengan fokus membangun struktur 
+                      organisasi yang solid, membentuk klaster-klaster riset, dan menyelenggarakan 
+                      berbagai kegiatan ilmiah dan networking.
                     </p>
                     <div className={styles.archiveLeadershipLinks}>
-                      <Link to="/tentang/pengurus" className={styles.archiveLeadershipLink}>
-                        Lihat Pengurus Saat Ini
+                      <Link to="/tentang/pengurus-2020-2022" className={styles.archiveLeadershipLink}>
+                        Lihat Arsip Pengurus 2020-2022
                       </Link>
                     </div>
+                  </div>
+                </div>
+
+                <div className={styles.timelineItem}>
+                  <div className={styles.timelineYear}>21 Desember 2019</div>
+                  <div className={styles.timelineContent}>
+                    <h3>Pendirian Resmi APIK</h3>
+                    <p>
+                      Asosiasi Peneliti Indonesia Korea (APIK) resmi didirikan di KBRI Seoul. 
+                      Pendirian ini menjadi tonggak bersejarah bagi komunitas peneliti Indonesia 
+                      di Korea Selatan.
+                    </p>
+                    <img 
+                      src="/img/third-meet.jpg" 
+                      alt="Pendirian Resmi APIK" 
+                      className={styles.timelineImage}
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.timelineItem}>
+                  <div className={styles.timelineYear}>24-25 November 2019</div>
+                  <div className={styles.timelineContent}>
+                    <h3>Pertemuan dengan Presiden RI</h3>
+                    <p>
+                      Para perintis APIK bertemu dengan Presiden Republik Indonesia, Bapak Joko Widodo, 
+                      di Busan, Korea Selatan. Pertemuan ini mengokohkan komitmen pemerintah Indonesia 
+                      untuk mendukung peneliti Indonesia di luar negeri.
+                    </p>
+                    <img 
+                      src="/img/second-meet.jpg" 
+                      alt="Pertemuan dengan Presiden RI" 
+                      className={styles.timelineImage}
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.timelineItem}>
+                  <div className={styles.timelineYear}>27 Oktober 2019</div>
+                  <div className={styles.timelineContent}>
+                    <h3>Pertemuan Awal</h3>
+                    <p>
+                      Pertemuan pertama diinisiasi oleh KBRI Seoul bersama beberapa perintis APIK. 
+                      Para peneliti Indonesia di Korea berkumpul untuk mendiskusikan pembentukan 
+                      organisasi yang akan menjadi wadah kolaborasi riset dan inovasi.
+                    </p>
+                    <img 
+                      src="/img/first-meet.png" 
+                      alt="Pertemuan Awal APIK" 
+                      className={styles.timelineImage}
+                    />
                   </div>
                 </div>
               </div>

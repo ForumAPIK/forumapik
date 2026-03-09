@@ -1,5 +1,6 @@
 .page {
-  padding: 2rem 0 3rem;
+  padding: var(--apik-page-padding-top) 0 var(--apik-page-padding-bottom-wide);
+  min-height: var(--apik-page-min-height);
 }
 
 .header {
