@@ -1,7 +1,7 @@
 ---
 title: Inovasi AI dan Pendidikan - APIK Adakan Mini Workshop dan Perkenalkan Pengurus Baru
 date: 2024-10-30
-tags: [workshop, ai, pendidikan, generative-ai, pengurus]
+tags: [acara, ai, generative-ai, info, pendidikan, pengurus, workshop]
 ---
 
 **Seoul, 30 Oktober 2024** – Asosiasi Peneliti Indonesia di Korea (APIK) sukses menggelar mini workshop bertajuk **"Apakah Berbahaya atau Bermanfaat? Investigasi Dampak Generative AI di Dunia Pendidikan"** yang sekaligus memperkenalkan pengurus baru untuk periode 2024-2026.
@@ -9,6 +9,21 @@ tags: [workshop, ai, pendidikan, generative-ai, pengurus]
 Acara ini berlangsung di **Ruang Serbaguna KBRI Seoul** dan menjadi **kegiatan offline perdana** kepengurusan baru APIK.
 
 <!--truncate-->
+
+## 📋 Daftar Isi
+
+- [Antusiasme Peserta](#antusiasme-peserta)
+- [Tema Aktual: Generative AI dalam Pendidikan](#tema-aktual-generative-ai-dalam-pendidikan)
+  - [Pro: Manfaat Generative AI](#pro-manfaat-generative-ai)
+  - [Kontra: Potensi Risiko](#kontra-potensi-risiko)
+- [Pembicara dan Materi](#pembicara-dan-materi)
+- [Perkenalan Pengurus Baru 2024-2026](#perkenalan-pengurus-baru-2024-2026)
+  - [Visi Kepengurusan Baru](#visi-kepengurusan-baru)
+- [Diskusi Interaktif](#diskusi-interaktif)
+- [Networking dan Kolaborasi](#networking-dan-kolaborasi)
+- [Komitmen APIK ke Depan](#komitmen-apik-ke-depan)
+
+
 
 ## Antusiasme Peserta
 

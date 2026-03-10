@@ -1,7 +1,7 @@
 ---
 title: Perayaan Hari Kemerdekaan RI ke-79 di KBRI Seoul - Semarak Nasionalisme dan Kebersamaan
 date: 2024-08-17
-tags: [hut-ri, kemerdekaan, kbri-seoul, dirgahayu]
+tags: [acara, dirgahayu, hut-ri, kbri-seoul, kemerdekaan]
 ---
 
 **Seoul, 17 Agustus 2024** — Kedutaan Besar Republik Indonesia (KBRI) di Seoul kembali menggelar perayaan **Hari Kemerdekaan Republik Indonesia yang ke-79** dengan penuh semangat dan kebanggaan.
@@ -9,6 +9,19 @@ tags: [hut-ri, kemerdekaan, kbri-seoul, dirgahayu]
 Acara ini menjadi magnet bagi **ratusan warga negara Indonesia** di Korea Selatan, yang datang dari berbagai penjuru negeri untuk merayakan momen bersejarah ini.
 
 <!--truncate-->
+
+## 📋 Daftar Isi
+
+- [Suasana Meriah di KBRI Seoul](#suasana-meriah-di-kbri-seoul)
+  - [Rangkaian Acara](#rangkaian-acara)
+- [Kehadiran APIK](#kehadiran-apik)
+- [Kuliner Nusantara](#kuliner-nusantara)
+- [Pesan Nasionalisme](#pesan-nasionalisme)
+- [Momen Kebersamaan](#momen-kebersamaan)
+- [Testimoni Peserta](#testimoni-peserta)
+- [Penutup](#penutup)
+
+
 
 ## Suasana Meriah di KBRI Seoul
 

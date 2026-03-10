@@ -1,7 +1,7 @@
 ---
 title: Memperkuat Sinergi - Potensi Kolaborasi APIK dan Atdikbud di Seoul
 date: 2024-07-09
-tags: [kolaborasi, atdikbud, kbri, kerjasama, pendidikan]
+tags: [acara, atdikbud, info, kbri, kerjasama, kolaborasi, pendidikan, webinar]
 ---
 
 **Seoul, 9 Juli 2024** — Pada hari Selasa, KBRI Seoul menjadi saksi dari diskusi penting yang berpotensi membawa perubahan signifikan dalam dunia riset dan pendidikan Indonesia.
@@ -9,6 +9,27 @@ tags: [kolaborasi, atdikbud, kbri, kerjasama, pendidikan]
 Pertemuan ini dihadiri oleh perwakilan dari **Asosiasi Peneliti Indonesia di Korea (APIK)** dan **Atase Pendidikan dan Kebudayaan (Atdikbud) KBRI Seoul**.
 
 <!--truncate-->
+
+## 📋 Daftar Isi
+
+- [Peserta Pertemuan](#peserta-pertemuan)
+- [Agenda Diskusi](#agenda-diskusi)
+  - [1. Database Peneliti Indonesia di Korea](#1-database-peneliti-indonesia-di-korea)
+  - [2. Program Capacity Building](#2-program-capacity-building)
+  - [3. Fasilitasi Riset Kolaboratif](#3-fasilitasi-riset-kolaboratif)
+  - [4. Promosi Studi di Korea](#4-promosi-studi-di-korea)
+  - [5. Kegiatan Budaya dan Diplomasi](#5-kegiatan-budaya-dan-diplomasi)
+- [Komitmen Bersama](#komitmen-bersama)
+- [Manfaat yang Diharapkan](#manfaat-yang-diharapkan)
+  - [Untuk Mahasiswa Indonesia](#untuk-mahasiswa-indonesia)
+  - [Untuk Peneliti Indonesia](#untuk-peneliti-indonesia)
+  - [Untuk Indonesia](#untuk-indonesia)
+- [Langkah Selanjutnya](#langkah-selanjutnya)
+- [Harapan ke Depan](#harapan-ke-depan)
+- [Kutipan](#kutipan)
+- [Penutup](#penutup)
+
+
 
 ## Peserta Pertemuan
 

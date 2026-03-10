@@ -1,7 +1,7 @@
 ---
 title: Meet the Team - Pengurus Harian APIK 2024-2026
 date: 2024-06-28
-tags: [pengurus, kepengurusan, organisasi, tim]
+tags: [acara, info, kepengurusan, organisasi, pengurus, tim, webinar]
 image: /img/blog/pengurus-apik-2024.jpg
 ---
 
@@ -10,6 +10,39 @@ Dalam upaya mendorong kemajuan riset dan inovasi di Indonesia, APIK telah mengum
 Tidak hanya memiliki rekam jejak akademis yang mengesankan, para pengurus APIK juga merupakan lulusan dari berbagai **universitas ternama di Korea Selatan**.
 
 <!--truncate-->
+
+## 📋 Daftar Isi
+
+- [Profil Kepengurusan](#profil-kepengurusan)
+  - [Struktur Organisasi](#struktur-organisasi)
+    - [🏛️ Dewan Pengurus Harian](#-dewan-pengurus-harian)
+    - [📚 Direktorat Pendidikan dan Keahlian](#-direktorat-pendidikan-dan-keahlian)
+    - [🔬 Direktorat Riset dan Inovasi](#-direktorat-riset-dan-inovasi)
+    - [💻 Direktorat Digital dan Media](#-direktorat-digital-dan-media)
+    - [🤝 Direktorat Kerjasama](#-direktorat-kerjasama)
+    - [🏢 Direktorat Kelembagaan](#-direktorat-kelembagaan)
+- [Latar Belakang Akademik](#latar-belakang-akademik)
+  - [🔋 Sains dan Teknologi](#-sains-dan-teknologi)
+  - [💻 Teknologi Informasi](#-teknologi-informasi)
+  - [🏗️ Teknik dan Rekayasa](#-teknik-dan-rekayasa)
+  - [🌾 Pertanian dan Bioteknologi](#-pertanian-dan-bioteknologi)
+  - [👥 Ilmu Sosial dan Humaniora](#-ilmu-sosial-dan-humaniora)
+  - [🏥 Kesehatan](#-kesehatan)
+- [Universitas Asal](#universitas-asal)
+- [Visi dan Misi Periode 2024-2026](#visi-dan-misi-periode-2024-2026)
+  - [Visi](#visi)
+  - [Misi](#misi)
+- [Program Kerja Unggulan](#program-kerja-unggulan)
+  - [📅 Kegiatan Rutin](#-kegiatan-rutin)
+  - [🎓 Program Pengembangan](#-program-pengembangan)
+  - [🤝 Kolaborasi](#-kolaborasi)
+  - [📢 Publikasi dan Komunikasi](#-publikasi-dan-komunikasi)
+- [Bergabung dengan APIK](#bergabung-dengan-apik)
+  - [Manfaat Menjadi Anggota:](#manfaat-menjadi-anggota)
+  - [Cara Mendaftar:](#cara-mendaftar)
+- [Penutup](#penutup)
+
+
 
 ## Profil Kepengurusan
 

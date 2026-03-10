@@ -8,9 +8,9 @@ export const heroSlides: SlideItem[] = [
     link: '/tentang/pengurus',
   },
   {
-    type: 'image',
-    src: '/img/apik-kerjasama.jpeg',
-    alt: 'APIK Logo',
+    type: 'video',
+    src: '/img/intro-id-kr.mp4',
+    alt: 'Intro Kolaborasoi',
     link: '/kerjasama',
   },
 ];

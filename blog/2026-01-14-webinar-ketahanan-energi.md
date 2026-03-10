@@ -1,7 +1,7 @@
 ---
 title: "Webinar APIK: Energy Security - Challenges & Solutions"
 date: 2026-01-14
-tags: [webinar, energi, ketahanan, arcandra-tahar, riset]
+tags: [arcandra-tahar, energi, ketahanan, riset, webinar]
 image: /img/blog/energy-challenges2026.jpeg
 ---
 
@@ -10,6 +10,16 @@ image: /img/blog/energy-challenges2026.jpeg
 Bagaimana strategi terbaik menghadapi tantangan ketahanan energi di masa depan? Mari join webinar APIK bersama **Arcandra Tahar, Ph.D.**, yang akan membedah tuntas mengenai:
 
 <!--truncate-->
+
+## 📋 Daftar Isi
+
+- [🌐 Energy Security: Challenges & Solutions](#-energy-security-challenges-solutions)
+  - [🎙 Narasumber](#-narasumber)
+- [Tiga Pendekatan Utama](#tiga-pendekatan-utama)
+- [💡 Untuk Siapa?](#-untuk-siapa)
+- [📲 Pendaftaran](#-pendaftaran)
+
+
 
 ## 🌐 Energy Security: Challenges & Solutions
 

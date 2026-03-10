@@ -1,7 +1,7 @@
 ---
 title: Menembus Batas - APIK Gelar Seminar Daring "Perjalanan dari Timur ke Barat"
 date: 2024-10-20
-tags: [seminar, webinar, karir, peneliti, argonne]
+tags: [acara, argonne, info, karir, peneliti, seminar, webinar]
 ---
 
 Asosiasi Peneliti Indonesia di Korea (APIK) untuk pertama kalinya pada periode kepengurusan 2024-2026  menyelenggarakan seminar daring bertajuk **"Perjalanan dari Timur ke Barat"** pada Minggu, 20 Oktober 2024, pukul 18.30 WIB (20.30 Waktu Korea Selatan).
@@ -9,6 +9,16 @@ Asosiasi Peneliti Indonesia di Korea (APIK) untuk pertama kalinya pada periode k
 Seminar ini digelar sebagai wujud apresiasi kepada **Dr. Kurniawan**, yang berhasil meraih kesempatan langka untuk bekerja sebagai peneliti di **Argonne National Laboratory**, sebuah laboratorium nasional terkemuka di Amerika Serikat.
 
 <!--truncate-->
+
+## 📋 Daftar Isi
+
+- [Pencapaian Luar Biasa](#pencapaian-luar-biasa)
+- [Rundown Acara](#rundown-acara)
+- [Sesi Tanya Jawab yang Interaktif](#sesi-tanya-jawab-yang-interaktif)
+- [Dampak dan Harapan](#dampak-dan-harapan)
+- [Penutup](#penutup)
+
+
 
 ## Pencapaian Luar Biasa
 
